@@ -1,58 +1,152 @@
-# Parth Vaidya — Portfolio (React + Vite)
+Parth Vaidya — Software Development Engineer Portfolio
 
-A proper React project (built with Vite) that **automatically deploys to GitHub Pages every
-time you push to `main`** using GitHub Actions — no manual "enable Pages" clicking after the
-first setup.
+A responsive portfolio website presenting my software engineering experience, technical skills, projects and professional background. It is built with React and Vite and automatically deployed to GitHub Pages through GitHub Actions.
 
-## Edit your content
+Live Portfolio
 
-Everything you'd want to change lives in `src/App.jsx`, at the top — `PROFILE`,
-`HERO_METRICS`, `STACK`, `EXPERIENCE`, `PROJECTS`, `ACHIEVEMENTS`, `EDUCATION`. Add your real
-LinkedIn/GitHub URLs to `PROFILE.linkedin` / `PROFILE.github` — currently blank.
+Website: parth1986-dotnet.github.io/parth-tech-showcase
 
-## Run it locally (optional, needs Node.js installed)
+About Me
 
-```bash
+I am a Java Software Development Engineer with experience building backend services, RESTful APIs, event-driven microservices and modern web applications. My core technologies include Java, Spring Boot, React, TypeScript, AWS, Kafka, SQL and automated testing.
+
+I enjoy solving production problems, improving application performance and building reliable software that delivers a clear benefit to users.
+
+Portfolio Sections
+
+Professional introduction and career highlights
+
+Technical stack and engineering capabilities
+
+Experience across fintech, healthcare and e-commerce
+
+Featured full-stack and backend projects
+
+Performance and reliability achievements
+
+Education and contact information
+
+Technology Stack
+
+Area
+
+Technologies
+
+Frontend
+
+React, TypeScript, JavaScript, HTML5, CSS3
+
+Backend
+
+Java 17/21, Spring Boot, Spring Cloud, REST, GraphQL, gRPC
+
+Cloud
+
+AWS Lambda, Step Functions, MSK, EKS, S3, RDS, SQS/SNS, CloudWatch
+
+Data
+
+PostgreSQL, MongoDB, DynamoDB, Redis, Elasticsearch
+
+Messaging
+
+Apache Kafka, RabbitMQ, event-driven architecture
+
+DevOps
+
+GitHub Actions, Jenkins, Docker, Kubernetes, Terraform
+
+Testing
+
+JUnit, Mockito, Testcontainers, Karate
+
+Key Features
+
+Responsive layout for desktop, tablet and mobile devices
+
+Reusable React components and data-driven portfolio sections
+
+Simple content management through JavaScript objects and arrays
+
+Fast production builds using Vite
+
+Repository-independent relative asset paths
+
+Automatic deployment whenever code is pushed to main
+
+Project Structure
+
+parth-tech-showcase/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── src/
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+
+Run Locally
+
+Node.js and npm must be installed.
+
+git clone https://github.com/Parth1986-dotnet/parth-tech-showcase.git
+cd parth-tech-showcase
 npm install
 npm run dev
-```
-Opens at `http://localhost:5173`.
 
-## Deploy to GitHub (one-time setup, then it's automatic)
+Open http://localhost:5173 in your browser.
 
-1. **Create a new public GitHub repository**, e.g. `portfolio`.
+To check the production build locally:
 
-2. **Push this project**:
-   ```bash
-   cd junior-portfolio
-   git init
-   git add .
-   git commit -m "Initial portfolio"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<repo-name>.git
-   git push -u origin main
-   ```
+npm run build
+npm run preview
 
-3. **Turn on GitHub Actions deployment** (one-time):
-   - Go to your repo → **Settings** → **Pages**
-   - Under **Build and deployment → Source**, choose **GitHub Actions**
-   - That's it — no branch/folder to pick, the workflow handles it.
+Update the Portfolio
 
-4. **Done.** The included workflow (`.github/workflows/deploy.yml`) will now automatically
-   build and publish the site on every push to `main`. Watch it run under the repo's
-   **Actions** tab. Once it finishes (~1 minute), your site is live at:
-   ```
-   https://<your-username>.github.io/<repo-name>/
-   ```
+Most portfolio content is stored near the top of src/App.jsx in the following data sections:
 
-5. From then on: edit `src/App.jsx`, commit, `git push` — the site updates itself within a
-   minute or two. No redeploy steps needed.
+PROFILE
 
-## Why this setup
+HERO_METRICS
 
-- **Vite + React** — a real build step (`npm run build`), not a CDN hack, so it behaves like a
-  standard professional React project (good to show recruiters you know the tooling).
-- **GitHub Actions workflow included** — demonstrates the CI/CD skills already on your CV
-  (GitHub Actions, Jenkins) applied to your own project.
-- **`vite.config.js` uses a relative base path**, so it works regardless of what you name the
-  repo — no config editing needed.
+STACK
+
+EXPERIENCE
+
+PROJECTS
+
+ACHIEVEMENTS
+
+EDUCATION
+
+After making changes, commit and push them:
+
+git add .
+git commit -m "Update portfolio content"
+git push origin main
+
+Automatic Deployment
+
+The workflow in .github/workflows/deploy.yml builds and publishes the website automatically.
+
+On every push to main, GitHub Actions:
+
+Installs the project dependencies.
+
+Creates the Vite production build.
+
+Uploads the generated static files.
+
+Deploys the site to GitHub Pages.
+
+For the first deployment, open Repository Settings → Pages and set Source to GitHub Actions. Future pushes will deploy automatically.
+
+Contact
+
+LinkedIn
+
+GitHub
+
+Live portfolio
