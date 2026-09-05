@@ -1,4 +1,4 @@
-Parth Vaidya — Software Development Engineer Portfolio
+Parth Vaidya — Software Development Engineer(Java) Portfolio
 
 A responsive portfolio website presenting my software engineering experience, technical skills, projects and professional background. It is built with React and Vite and automatically deployed to GitHub Pages through GitHub Actions.
 
